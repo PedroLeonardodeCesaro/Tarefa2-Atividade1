@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    
+
+    <title>Calculator</title>
+    
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="theme-slider">
+            <input type="range" min="0" max="1" step="1" value="0" onchange="toggleTheme(this.value)">
+            <p>Theme</p>
+        </div>
+        <div class="history" id="history3"></div>
+        <div class="history" id="history2"></div>
+        <div class="history" id="history1"></div>
+        <input type="text" id="display" disabled>
+        <br>
+        <input type="button" value="7" onclick="addToDisplay('7')">
+        <input type="button" value="8" onclick="addToDisplay('8')">
+        <input type="button" value="9" onclick="addToDisplay('9')">
+        <input type="button" value="/" onclick="addToDisplay('/')">
+        <input type="button" value="←" onclick="backspace()">
+        <input type="button" value="C" onclick="clearDisplay()">
+        <br>
+        <input type="button" value="4" onclick="addToDisplay('4')">
+        <input type="button" value="5" onclick="addToDisplay('5')">
+        <input type="button" value="6" onclick="addToDisplay('6')">
+        <input type="button" value="x" onclick="addToDisplay('*')">
+        <input type="button" value="(" onclick="addToDisplay('(')">
+        <input type="button" value=")" onclick="addToDisplay(')')">
+        <br>
+        <input type="button" value="1" onclick="addToDisplay('1')">
+        <input type="button" value="2" onclick="addToDisplay('2')">
+        <input type="button" value="3" onclick="addToDisplay('3')">
+        <input type="button" value="-" onclick="addToDisplay('-')">
+        <input type="button" value="x²" onclick="addToDisplay('x²')">
+        <input type="button" value="√" onclick="addToDisplay('√')">
+        <br>
+        <input type="button" value="0" onclick="addToDisplay('0')">
+        <input type="button" value="." onclick="addToDisplay('.')">
+        <input type="button" value="%" onclick="addToDisplay('%')">
+        <input type="button" value="+" onclick="addToDisplay('+')">
+        <input type="button" value="=" onclick="calculate()">
+    </div>
+
+
+    
+    <script src="/src/js/script.js"></script>
+</body>
+
+</html>
